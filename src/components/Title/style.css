@@ -1,0 +1,17 @@
+
+h1 {
+  color: #C4F1F9
+}
+
+h1 {
+  animation: shazam 15s;
+}
+
+@keyframes shazam {
+  0% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
