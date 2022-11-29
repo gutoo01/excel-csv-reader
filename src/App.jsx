@@ -8,27 +8,26 @@ export default function App() {
   const [parsedData, setParsedData] = useState([]);
   const [tableCols, setTableCols] = useState([]);
   const [values, setValues] = useState([]);
-
+  
   const changeHandler = (event) => {
-    Papa.parse(event.target.files[0], {
-      header: true,
-      skipEmptyLines: true,
-
-      complete: function (results) {
-        const columnsArray = [];
-        const valuesArray = [];
-
-        results.data.map((d) => {
-          columnsArray.push(Object.keys(d));
-          valuesArray.push(Object.values(d));
-        });
-
-        setParsedData(results.data);
-        setTableCols(columnsArray[0]);
-        setValues(valuesArray);
-
-      },
-    })
+      Papa.parse(event.target.files[0], {
+        header: true,
+        skipEmptyLines: true,
+        
+        complete: function (results) {
+          const columnsArray = [];
+          const valuesArray = [];
+          
+          results.data.map((d) => {
+            columnsArray.push(Object.keys(d));
+            valuesArray.push(Object.values(d));
+          });
+          
+          setParsedData(results.data);
+          setTableCols(columnsArray[0]);
+          setValues(valuesArray);
+        },
+      })
   }
 
   return (
@@ -68,3 +67,5 @@ export default function App() {
     </>
   )
 }
+
+// tentar tratar dados com Regex 

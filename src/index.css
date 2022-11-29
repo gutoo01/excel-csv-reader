@@ -68,3 +68,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 600px) {
+
+    h1 {
+      font-size: 1.5rem;
+      margin: 0 1rem 2rem 1rem;
+    }
+  }
