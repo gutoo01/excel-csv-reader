@@ -30,4 +30,4 @@ sample output:
   - in state: ``parsedData`` you can get the file in JSON format
 
 ## Open for PR:
-- [ ] Cells cannot contain special characters
+- [X] Cells cannot contain special characters
