@@ -31,3 +31,4 @@ sample output:
 
 ## Open for PR:
 - [X] Cells cannot contain special characters
+- [X] Added reverse conversion from CSV to JSON
